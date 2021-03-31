@@ -1,0 +1,153 @@
+<Language RecognitionLanguage="NorwegianBokmal">
+			<Date>
+				<Language></Language>
+			</Date>
+			<KeywordLists>
+				<KeywordList Name="CreditNoteKeywords">
+					<Keywords>Kredit|Kreditnota</Keywords>
+				</KeywordList>
+				<KeywordList Name="ReversedChargeKeywords">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceNumberWithDateLabels">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceNumberHighConfidenceLabels">
+					<Keywords>
+						<![CDATA[Fakt.nr|Fakt.nr.|Fakt.nr.:|Faktnr|Faktnr.:|Faktnr:|Faktura|Faktura nr|Faktura nr.|FAKTURA N° :|Faktura/OCR nr.|Fakturanr|Fakturanr.|Fakturanr.:|Fakturanr.:	|Fakturanr:|Fakturanummer|Fakturanummer:|Invoice|Invoice #|Invoice #:|Invoice No|Invoice No.|Invoice No.:|Invoice Number|INVOICE N°|Invoice VAT nr|Nr.|Nummer]]>
+					</Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceNumberLowConfidenceLabels">
+					<Keywords>Dokumentnummer|Fakt#|Kreditnota|No.|Nr.|Nr:|Nummer|Regning|Salgsfaktura</Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceNumberExcludePrefixes">
+					<Keywords>i |N :|No.|nr|Nr.|Nr.:</Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceNumberExcludeSuffixes">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceDateHighConfidenceLabels">
+					<Keywords>Bilagsdato|Billing Date|Dato|Dato:|Datum|Document Date|Dokumentdato|F. dato|Fakt.dato:|Faktura dato|Fakturadato|Fakturadato :|Fakturadato:|Fakturadatum|Invoice Date|Invoice Date:|issue date:|Kreditdato|sale Date|Tax point Date|Utstedt</Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceDateLowConfidenceLabels">
+					<Keywords>Date|Date:|Dato|Dato:|Fakturert|Fakturert den</Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceDateLabelsNearCity">
+					<Keywords>,</Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceDateLabelsNearInvoiceNumber">
+					<Keywords>, datert|datert</Keywords>
+				</KeywordList>
+				<KeywordList Name="DeliveryDateLabels">
+					<Keywords>Leveringsdato</Keywords>
+				</KeywordList>
+				<KeywordList Name="DueDateLabels">
+					<Keywords>Bet.frist|Betales før|Betales innen|Betalingsfrist|Betalingsfrist:|deadline for payment|Due Date|Due date:|Forf.dato:|Forf.fato:|Forfall|Forfall:|Forfallodatum|Forfallsdato|Forfallsdato:|Förfallodatum|Payment date:|Payment due|Payment Due:|Settlement Due by:|Siste bet.dag:</Keywords>
+				</KeywordList>
+				<KeywordList Name="PurchaserNameLabels">
+					<Keywords>Ansvarlig|Att|att.:|Att:|Attn|Dered ref.:|Deres ref|Deres ref :|Deres ref.|Deres ref.:|DERES REF/YOUR REF|Deres ref:|Deres referanse|Deres referanse:|Deres referansenummer:|Deres referense|Ditt referansenummer:|Er ref|Er referens|FAO|FAO:|Kjøper|Kunde ref.:|Kundekontakt|Kundereferanse|Ref|Ref/Prosjektnr:|Referanse:|Reference:|YOUR REF|Your ref.|Your ref:|Your Reference</Keywords>
+				</KeywordList>
+				<KeywordList Name="PurchaserNameFalseFieldPrefixes">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="OrderNumberLabels">
+					<Keywords>Bestillingsnummer|Kjøpsordre|Ordre|Ordre nummer|Ordrenr|Ordrenummer|PO|PO nr|PO num|PO nummer|PO:|Ref.nr.:</Keywords>
+				</KeywordList>
+				<KeywordList Name="InvoiceIdentifiers">
+					<Keywords>Faktura|Invoice</Keywords>
+				</KeywordList>
+				<KeywordList Name="AmountTotalHighConfidenceLabels">
+					<Keywords>
+						<![CDATA[Amount Due:|Att betala|BALANCE DUE|Beløp|Beløp NOK|BELØP TIL GODE|Beløp totalt|Beløp å betale|Beløp å betale (NOK)|Beløp å betale, kr|Beløp å betale:|Brutto|brutto total|Brutto:|Bruttosum NOK|Faktura beløp|FAKTURA TOTAL|Faktura totalt|Fakturabelopp|Fakturabeløp|Fakturabeløp NOK|Fakturabeløp  NOK|Fakturabeløp:|Fakturasum|Fakturasum:|fakturatotal|Grand Total|Gross total|Inkl. MVA|Invoice Amount|Invoice Total:|Invoiced|Ordresum|Saldo i vår favør|Sum|Sum bilag (brutto)|Sum inkl MVA|Sum inkl. mva.|Sum inkl.mva.|SUM Å BETALE|Sum å betale i NOK|Til betaling NOK|Total|Total beløp|Total brutto|Total Due|Total in SEK|Total inkl mva|Total invoiced amount|total NOK|Total NOK:|Total Price(Incl.VAT)|Total USD|Total: NOK KR.:|totalbeløp|totalbeløp i kr|totalbeløp inkl MVA|Totalbeløp inkl. MVA|Totalbeløp:|Totalt|Totalt att betala|totalt beløp|Totalt fakturert:|totalt inkl MVA|Totalt inkl. mva|Totalt inkl. MVA  NOK|Totalt inkl. MVA NOK|totalt kr|Totalt NOK|Totalt NOK inkl. MVA|Totalt NOK inkl. mva.|totalt å betale|totaltbeløp i kr|Utestående beløp|vennligst betal|Å Betale|Å betale i NOK|Å betale NOK|Å betale:]]>
+					</Keywords>
+				</KeywordList>
+				<KeywordList Name="AmountTotalLowConfidenceLabels">
+					<Keywords>total|total eur|total kr|total kreditt|total nok|total påløpt|Total:|Totalt kr|Totalt NOK|Totalt:</Keywords>
+				</KeywordList>
+				<KeywordList Name="AmountTotalNettoLabels">
+					<Keywords>
+						<![CDATA[Beløp ekskl. MVA|Beløp eksl moms|Delsum NOK|Eks. MVA|Eks. MVA	Sum|Ekskl MVA	AKKUMULERT NETTO KJØP|Eksl. MVA|faktura sub-total|Grunnlag|Grunnlag mva:|M.V.A.grunnlag|MVA gr. lag|MVA gr.lag|Mva grl netto|Mva grunnlag|Mva grunnlag:|Mva grunnlag: |MVA-grunnlag|Mva-pliktig|Mva.grl:|Mvagrunnlag|Net (Norwegian krone)|Net Amount|Net Amount:|Net total|Netto|Netto beløp|Netto beløp:|Netto for moms|netto kr|Netto NOK|Netto sum|Netto Total kr|Netto:|Nettobeløp|Nettosum|Nettoverdi|Nettovärde|Nto.beløp:|Ordretotal|Salgssaldo|sub total|sub total eks. mva|sub total eksklusiv mva|sub-total|subtotal|Subtotal:|Sum avgiftsfritt|Sum bilag (netto)|Sum deklarasjoner|Sum denne ordre ekskl.MVA:|SUM EKS MVA|Sum eks. mva|Sum eks. mva i NOK|Sum eks. mva.|Sum eks.mca|Sum ekskl. mva.|Sum excl. Tax/MVA|Sum grunnlag: |Sum order lines:|Sum ordrelinjer|Sum ordrelinjer:|Sum varelinjer eks. mva / Totalt å betale inkl. mva|Sum å betale|Summa|Toltalt avg.gr.lag|Tot.bel ekskl. avgift |total eks mva|total eks. mva|Total ekskl.MVA|total eksklusive mva|Total excl. VAT|total for varer og tjenester|total net|Total netto|total netto beløp|total nok eks mva|Total NOK eks MVA	Nettobeløp|total nok eks. mva|Total Pre-Tax Charges|Total value ex. VAT.:|totalbeløp eks mva|totalbeløp eksklusive mva|Totalt avg.gr.lag|Totalt eks. mva|Totalt ekskl. MVA|Totalt NOK eks.|Totalt NOK eks. mva|Totaltbeløp exkl.mva|vare(r) subtotal|varer totalt]]>
+					</Keywords>
+				</KeywordList>
+				<KeywordList Name="AmountTotalTaxLabels">
+					<Keywords>
+						<![CDATA[ADD VAT|Avgift|Herav MVA|M.V.A.beløp|MERVERDIAVG|Merverdiavgift|Merverdiavgift:|Moms|Moms 25%|Moms/MVA|Mva|MVA (25 % av 0,00 )|MVA 25%:|MVA beløp|Mva grunnlag/beløp:|Mva kr:|MVA-beløp|MVA-Beløp kr|MVA-grunnlag (samme linje)|Mva.|Mva. |Mva. høy sats 25% (H):|mva.av|Mva.beløp:|Mva:|MVA: |Sum MVA|Sum mva.	Varav moms 0,00% på|Sum mva. (25%)|Sum mva:|Sum VAT:|Tax|Tax amount|Tax/MVA|Total (samme linje)|Total avgift|total mva|total mva beløp|Totalt MVA beløp|Totalt mva-beløp|Utgående moms|Utgående mva.|VAT|VAT %25.00|VAT (Sales Tax)|VAT 25%|VAT 25% OF|VAT @|VAT Amount|VAT NP|VAT:]]>
+					</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsOrderNumberLabels">
+					<Keywords>Ordre|Ordre nummer|Ordrenummer|P.O. Nummer|P.O.Num|PO|PO nummer</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsPositionLabels">
+					<Keywords>Linje|Linje nr|Nr</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsDescriptionLabels">
+					<Keywords>Art. tekst/Merknad|Artikkel|Artikkelnavn|Benevnelse|Benämning|Beskr|Beskrivelse|Beskrivning|Betegnelse|Bomstasjon|Description|Detaljer|Fakturering i henhold til avtale|Innrykningsdatoer|Material Number|Merke &amp; nummer|name of the product or service|Nettnavn|Oppsummering|Ordreinformasjon|Product name|Produkt|Produktbeskrivelse|Produkter|Produktnavn|Ressurs/Artikkel|Spesifikasjon|Tekst|Tjeneste|Transaksjonstekst|Vare|Varebeskrivelse|VAREBETEGNELSE|Varenavn|Varetekst</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsArticleNumberLabels">
+					<Keywords>Art|Art no|Art. nr Bransjenr.|Art. nummer|Art.nr.|Article no.|Artikelnr|Artikkel|Artikkelnr|Artikkelnr.|ARTIKKELNUMMER|Delenummer|ID|IO Line#|Item|Item Number|Katalog Nummer|Katalognr|Kode|Kontrakt|Material|Nett no|P.no.|Prod.nr|Prod.nr.|Produkt|Produktnr|SIM-kort nr.|Varenr|Varenr.|Varenummer</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsArticleNumberBULabels">
+					<Keywords>Art|Artikkel|Artikkelnummer</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsQuantityLabels">
+					<Keywords>Ant|Ant Enh. Lev|Ant.|Ant. enh.|Antal|Antal Enhet|Antall|Best.ant|Bestillt|Delivered|Enh|Enhet|Enheter|KVANTUM|Kvt.|Levert|Orderantal|Qty|Quantity|Quantity Shipped|Timer|Units</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsQuantityOrderedLabels">
+					<Keywords>Ant best|Antall bestilt|Enheter bestilt</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsQuantityUndeliveredLabels">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsUnitPriceLabels">
+					<Keywords>A pris|A-pris|Cena jed. netto / Unit net price|Cena netto|Enh pr|Enh pris|Enh.pris|Enh.pris (eks. mva)|Enhetspris|Grunnpris|Mnd. pris|net price|Netto per|Netto/enh.|NETTOPRIS|Per|Price|Price:|Pris|Pris (per stk)|Pris eks mva|Pris Enh.|Pris per|Pris pr. enhet|Pris/enhet|RATE|Salgspris|Standard sendings-pris|Stk-pris|Stykkpris|Unit Price|Value Per Unit (Excl.VAT)|à pris</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsUnitPriceDenominatorLabels">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsUnitOfMeasureLabels">
+					<Keywords>Per|Per stk|UoM</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsDiscountPercentageLabels">
+					<Keywords>%|% Avslag|% Rabatt|Dis %|Disc.|Discount|Discount %|Linje Rabatt|Rab|Rab %|Rab-%|Rab.|Rab.%|Rab.I|Rabatt|Rabatt %|Rabatt [%]|Rabatt-%|Rabatt-prosent</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsDiscountAmountLabels">
+					<Keywords>Avslag|Rab|Rabatt|Rabatt beløp|Rabattbeløp</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsTotalPriceNettoLabels">
+					<Keywords>(NOK)|Amount|Amount excl. VAT|Belopp|Beløp|Beløp (eks. mva)|Beløp eks. mva|Beløp i NOK|Beløp NOK|CHARGES IN NOK|Eks. Mva|Ext. Price|Fakturabeløp|Fee(NOK)|Linje total|Linjebeløp|net amount|NET AMT|Net NOK|Netto|Netto beløp|NETTO PRIS|Netto sum|Netto total|Nettobeløp|Nettopris|Pris|Pris (SEK)|Pris NOK|SUM|SUM EKS MVA|SUM eks. mva NOK|Sum netto|Summa|Til betaling|Total|Total eks mva|Totalt|Totalt NOK|Value|Value NOK|Varelinje sum|Verdi|Å betale ekskl MVA</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsTotalPriceBruttoLabels">
+					<Keywords>Amount|Beløp|Beløp (inkl. mva)|brutto|Brutto beløp|Brutto sum|gross amount|inkl. mva|Sum|Sum brutto|Total|Totalsum|Totalt</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsOrderDateLabels">
+					<Keywords>Dato|Ordredato|Periode</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsDeliveryDateLabels">
+					<Keywords>Dato|Lev dato:|Leveringsdato|Periode</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsVATPercentageLabels">
+					<Keywords>Momssats|MVA %|MVA (%)|MVA KODE|Mva Sats|MVA Sats %|Mva-type|Mva.%|Mvasats|Sats %|Sats i %|Tax Rate %|VAT %|VAT [%]|VAT%</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsVATCodeLabels">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsVATAmountLabels">
+					<Keywords>M.V.A|M.V.A Beløp|Merverdiavgift|MVA|MVA Beløp</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsMaterialNumberLabels">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsMaterialNumberBULabels">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsCurrencyLabels">
+					<Keywords></Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsUnitOfMeasureVariants">
+					<Keywords>Dager|Gram|Kilo|Liter|Stk|Tonn</Keywords>
+				</KeywordList>
+				<KeywordList Name="LineItemsSubtotalVariants">
+					<Keywords></Keywords>
+				</KeywordList>
+			</KeywordLists>
+		</Language>
