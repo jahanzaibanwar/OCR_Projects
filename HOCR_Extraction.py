@@ -4,7 +4,7 @@
 ******************************************************
 Name :HOCR_Extraction.py                                     *
 Author : Jahanzaib Anwar                             *
-Email : anwar@semine.no                              * 
+                             * 
 Time :06.04.2021 08:49                                *
 Desc                                                 * 
 ******************************************************
