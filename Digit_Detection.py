@@ -4,7 +4,7 @@
 ******************************************************
 Name :Digit_Detection.py                                     *
 Author : Jahanzaib Anwar                             *
-Email : anwar@semine.no                              * 
+                             * 
 Time :17.03.2021 11:43                                *
 Desc                                                 * 
 ******************************************************
